@@ -10,7 +10,7 @@ from v2a_mapper.mapper import V2AMapper
 from v2a_mapper.clip import calculate_clip
 
 v2a_mapper_model = V2AMapper(512, 512, expansion_rate=4)  # Update input_dim, output_dim accordingly
-v2a_mapper_model.load_state_dict(torch.load('pre_trained/v2a_mapper_mlps.pth'))
+v2a_mapper_model.load_state_dict(torch.load('v2a_mapper/pre_trained/v2a_mapper_mlps.pth'))
 v2a_mapper_model.eval()
 
 def disabled_train(self, mode=True):
